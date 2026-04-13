@@ -1,0 +1,8 @@
+{
+  "rows": 3,
+  "alerts": 0,
+  "alerts_per_minute": 0.0,
+  "throughput_flows_per_sec": 29.2810177846444,
+  "detection_delay_seconds": null,
+  "threshold": 0.2456320324399221
+}

@@ -1,0 +1,20 @@
+{
+  "input_files": [
+    "data/raw/TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Friday-WorkingHours-Morning.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Monday-WorkingHours.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Tuesday-WorkingHours.pcap_ISCX.csv",
+    "data/raw/TrafficLabelling /Wednesday-workingHours.pcap_ISCX.csv"
+  ],
+  "rows_total": 3119345,
+  "rows_train": 1138612,
+  "rows_val": 458968,
+  "rows_test": 703245,
+  "label_column": "label",
+  "timestamp_column": "timestamp",
+  "split_strategy": "split_by_day",
+  "attack_rate_total": 0.27129028690317997
+}
