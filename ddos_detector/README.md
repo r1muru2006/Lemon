@@ -121,16 +121,16 @@ Output:
 - `reports/online_eval.json`
 - `reports/alerts.csv`
 
-## 9. Tich hop Lemon (GitHub)
+## 9. Tích hợp Lemon (GitHub)
 
-Neu ban chay Lemon controller va thu duoc log dang:
+Nếu bạn chạy Lemon controller và thu được log dạng:
 
 ```text
 <dst_ip>,<counter>,<estimate>
 ```
 
-hoac co prefix logger (vi du `INFO:root:<dst_ip>,<counter>,<estimate>`),
-co the chuyen sang format detector bang:
+hoặc có prefix logger (ví dụ `INFO:root:<dst_ip>,<counter>,<estimate>`),
+có thể chuyển sang format detector bang:
 
 ```bash
 python src/lemon_bridge.py \
@@ -139,7 +139,7 @@ python src/lemon_bridge.py \
   --step-seconds 1
 ```
 
-Sau do chay online detector truc tiep:
+Sau đó chạy online detector trực tiếp:
 
 ```bash
 python src/online_detect.py \
@@ -148,10 +148,10 @@ python src/online_detect.py \
   --report-dir reports/lemon_online
 ```
 
-Luu y: adapter se map cac thong so Lemon (counter, estimate) sang mot tap feature toi thieu,
-nhung van giu tuong thich voi model metadata hien tai.
+Lưu ý: adapter sẽ map các thông số Lemon (counter, estimate) sang một tập feature tối thiểu,
+nhưng vẫn giữ tương thích với model metadata hiện tại.
 
-## 10. Luu y quan trong
+## 10. Lưu ý quan trọng
 
 - Ưu tiên split theo thời gian để giảm data leakage.
 - Nhãn benign được map bởi từ khóa `benign`/`normal`; phần còn lại xem là attack.
